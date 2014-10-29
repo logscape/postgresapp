@@ -12,7 +12,7 @@ The PostgresApps monitors tables, indexes and resource utilisation
 
 ## Downloads 
 
- * [PostgresApp-1.1.zip](https://github.com/logscape/postgresapp/raw/master/dist/PostgressqlApp-1.1.zip)
+ * [PostgresApp-1.1.zip](https://github.com/logscape/postgresapp/raw/master/dist/PostgresqlApp-1.0.zip)
  * [Example Properties File ](https://github.com/logscape/postgresapp/raw/master/dist/PostgresqlApp-1.1-override.properties)
 
 
