@@ -6,8 +6,9 @@ The PostgresApps monitors tables, indexes and resource utilisation
 
 ## Properties 
 
- defaultUser,defaultPassword -  Username and password of postgres monitoring user. This user should have read only access to system tables 
- hostnames - a list of postgres hosts to monitor 
+ **defaultUser, defaultPassword** -  Username and password of postgres monitoring user. This user should have read only access to system tables 
+ 
+ **hostnames** - a list of postgres hosts to monitor 
  
 
 ## Downloads 
