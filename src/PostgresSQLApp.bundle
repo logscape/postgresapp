@@ -1,0 +1,91 @@
+<Bundle name="DockerApp" version="1.0" system="false">
+  <status>UNINSTALLED</status>
+  <owner>info@logscape.com</owner>
+  <services>
+
+      <Service>
+      	<name>pg_dbs</name>
+        <resourceSelection>osName contains Linux</resourceSelection>
+      	<fork>true</fork>
+      	<background>true</background>
+        <instanceCount>-1</instanceCount>
+	<pauseSeconds>300</pauseSeconds>
+	<script>dbs.groovy</script> 
+    </Service>
+
+      <Service>
+      	<name>pg_usrtbls</name>
+        <resourceSelection>osName contains Linux</resourceSelection>
+      	<fork>true</fork>
+      	<background>true</background>
+        <instanceCount>-1</instanceCount>
+	<pauseSeconds>300</pauseSeconds>
+	<script>tables.groovy</script> 
+    </Service>
+
+      <Service>
+      	<name>pg_usrio</name>
+        <resourceSelection>osName contains Linux</resourceSelection>
+      	<fork>true</fork>
+      	<background>true</background>
+        <instanceCount>-1</instanceCount>
+	<pauseSeconds>300</pauseSeconds>
+	<script>table_io.groovy</script> 
+    </Service>
+
+      <Service>
+      	<name>pg_idxs</name>
+        <resourceSelection>osName contains Linux</resourceSelection>
+      	<fork>true</fork>
+      	<background>true</background>
+        <instanceCount>-1</instanceCount>
+	<pauseSeconds>300</pauseSeconds>
+	<script>indexes.groovy</script> 
+    </Service>
+
+
+      <Service>
+      	<name>pg_activity</name>
+        <resourceSelection>osName contains Linux</resourceSelection>
+      	<fork>true</fork>
+      	<background>true</background>
+        <instanceCount>-1</instanceCount>
+	<pauseSeconds>300</pauseSeconds>
+	<script>activity.groovy</script> 
+    </Service>
+
+      <Service>
+      	<name>pg_idxio</name>
+        <resourceSelection>osName contains Linux</resourceSelection>
+      	<fork>true</fork>
+      	<background>true</background>
+        <instanceCount>-1</instanceCount>
+	<pauseSeconds>300</pauseSeconds>
+	<script>index_io.groovy</script> 
+    </Service>
+
+     <Service>
+      	<name>_sys_appmetrics_</name>
+        <resourceSelection>osName contains Linux</resourceSelection>
+      	<fork>true</fork>
+      	<background>true</background>
+        <instanceCount>-1</instanceCount>
+	<pauseSeconds>20</pauseSeconds>
+	<script>_sys_appmetrics.groovy  _filter=postmaster,postgres </script> 
+    </Service>
+
+     <Service>
+      	<name>_sys_osmetrics_</name>
+        <resourceSelection>osName contains Linux</resourceSelection>
+      	<fork>true</fork>
+      	<background>true</background>
+        <instanceCount>-1</instanceCount>
+	<pauseSeconds>20</pauseSeconds>
+	<script>_sys_osmetrics.groovy  </script> 
+    </Service>
+
+
+
+ </services>
+</Bundle> 
+

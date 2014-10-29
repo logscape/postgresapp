@@ -4,12 +4,11 @@ PostgresApp-1.1 ![](http://logscape.com/images/track.png?version=github)
 
 The PostgresApps monitors tables, indexes and resource utilisation
 
-## Prequisites
+## Properties 
 
-The following commands should be available from the command-line. They are available in most default Linux/Postgres installations. 
-
-	sar needs to be installed.
-	iostat is required for disk performance metrics 
+ defaultUser,defaultPassword -  Username and password of postgres monitoring user. This user should have read only access to system tables 
+ hostnames - a list of postgres hosts to monitor 
+ 
 
 ## Downloads 
 
@@ -26,6 +25,7 @@ The Home Workspace gives you an overview of your databases and a view of  your p
 	* Toast -  displays information about the toast tables and their buffer hit performance. 
 	* Processes  - displays the kernel cache, cpu and memory utilization of postgres processes 
 
+## Home 
 ![](docs/images/pg_home.png) 
 
 
